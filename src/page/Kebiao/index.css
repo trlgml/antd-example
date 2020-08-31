@@ -1,0 +1,32 @@
+.events {
+  padding: 15px 15px 10px;
+}
+:global(.events){
+  padding: 35px 15px 10px;
+  
+}
+.ant-picker-cell,.ant-picker-cell-disabled,.ant-picker-cell-in-view {
+  position: relative;
+}
+.events .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.events .content {
+  padding-bottom: 30px;
+  height: 72px;
+}
+
+table,table tr th, table tr td { border:1px solid #000; }
+
+
+.sepia {
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+.center{
+  text-align: center;
+}
