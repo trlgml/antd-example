@@ -4,69 +4,39 @@ import { Button, Row, Col } from 'antd';
 import "./index.css";
 
 const Anim = () => {
-  const [show, setShow] = useState(true)
-  const [transform, setTransform] = useState(false)
+  const [current, setCurrent] = useState(0)
+  const list = [1, 2, 3, 4, 5, 6, 7]
+  const len = list.length
   return (
     <div className="queue-demo">
-
-      {
-        <div className={`trlgml  ${!show ? 'trlgml-t' : 'trlgml-c'}`}>
-          <Button
-            onClick={() => {
-              setShow(true)
-            }}
-          >功能</Button>
-        </div>
-      }
-      <div className={`trlgml ${show ? 'trlgml-m-c' : 'trlgml-m-t'}`}>
-        <Button>挂断</Button>
+      {current}
+      <div className="answer">
+        {
+          list.map((item, index) => {
+            return (
+              <div key={item} className={`item ${[0, 1, 2].includes(index - current) ? 'card-' + (index - current) : current > index && 'card-n'} `}>
+                <div>{item}</div>
+              </div>
+            )
+          })
+        }
       </div>
-      <div className={`trlgml-h  ${show ? 'trlgml-h-c' : 'trlgml-h-t'}`}>
-        <Button onClick={() => {
-          setShow(false)
-        }}>右侧</Button>
-      </div>
+      <Button
+        onClick={() => {
+          setCurrent((i) => {
+            if (i === 0) return i
 
-      <Row className="trlgml">
-        <Col span={12} className={`trlgml-item ${transform && 'trlgml-transform'}`}>
-          <Button onClick={() => {
-            if (!show) {
-              setTransform(false)
-            }
-            setShow(((b) => {
-              console.log(b);
-              return !b
-            }))
-          }}>
-            功能
-          </Button>
-        </Col>
-        <Col>
-          <QueueAnim type={['left', 'left']} leaveReverse onEnd={({ key, type }) => {
-            console.log(type);
-            if (type === 'leave') {
-              setTransform(true)
-            }
-          }}>
-            {
-              show && [
-                <div key="sss">
-                  2222222222
-                </div>,
-                <div key="aaa">
-                  2222222222
-                </div>,
-                <div key="bbb">
-                  2222222222
-                </div>,
-                <div key="ccc">
-                  2222222222
-                </div>
-              ]
-            }
-          </QueueAnim>
-        </Col>
-      </Row>
+            return --i
+          })
+        }}>上</Button>
+      <Button
+        onClick={() => {
+          setCurrent((i) => {
+            if (i === len - 1) return i
+            return ++i
+          })
+        }}
+      >下</Button>
     </div >
   );
 };
