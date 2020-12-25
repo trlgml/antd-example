@@ -9,8 +9,11 @@ const Demo = lazy(() => import(/* webpackChunkName: "Demo" */ "@/page/Demo"));
 const Kebiao = lazy(() => import(/* webpackChunkName: "Demo" */ "@/page/Kebiao"));
 const Paletee = lazy(() => import(/* webpackChunkName: "Demo" */ "@/page/Paletee"));
 const Selfvideo = lazy(() => import(/* webpackChunkName: "Demo" */ "@/page/Selfvideo"));
+const Selfaudio = lazy(() => import(/* webpackChunkName: "Demo" */ "@/page/Selfaudio"));
 const Anim = lazy(() => import(/* webpackChunkName: "Anim" */ "@/page/Anim"));
 const Home = lazy(() => import(/* webpackChunkName: "Home" */ "@/page"));
+const Im = lazy(() => import(/* webpackChunkName: "Im" */ "@/page/Im"));
+const Copy = lazy(() => import(/* webpackChunkName: "Im" */ "@/page/Copy"));
 const NoMatch = lazy(() => import(/* webpackChunkName: "404" */ "@/page/404"));
 
 const routers = [
@@ -18,8 +21,11 @@ const routers = [
   { path: "/Demo", component: Demo },
   { path: "/Paletee", component: Paletee },
   { path: "/Selfvideo", component: Selfvideo },
+  { path: "/Selfaudio", component: Selfaudio },
   { path: "/Kebiao", component: Kebiao },
   { path: "/Anim", component: Anim },
+  { path: "/Im", component: Im },
+  { path: "/Copy", component: Copy },
   { path: "/404", component: NoMatch },
 ]
 

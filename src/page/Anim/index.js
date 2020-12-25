@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import QueueAnim from 'rc-queue-anim';
-import { Button, Row, Col } from 'antd';
+import { Button } from 'antd';
 import "./index.css";
 
 const Anim = () => {

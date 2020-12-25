@@ -8,7 +8,10 @@ const Home = () => {
     { name: '课表打印', path: '/kebiao' },
     { name: 'Paletee', path: '/Paletee' },
     { name: 'Selfvideo', path: '/Selfvideo' },
+    { name: 'Selfaudio', path: '/Selfaudio' },
     { name: 'Anim', path: '/Anim' },
+    { name: 'Im', path: '/Im' },
+    { name: 'Copy', path: '/Copy' },
   ]
   return (
     <div className="home">
