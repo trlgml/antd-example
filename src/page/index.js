@@ -12,6 +12,8 @@ const Home = () => {
     { name: 'Anim', path: '/Anim' },
     { name: 'Im', path: '/Im' },
     { name: 'Copy', path: '/Copy' },
+    { name: 'Drag', path: '/drag' },
+    { name: 'Editor', path: '/editor' },
   ]
   return (
     <div className="home">
