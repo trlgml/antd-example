@@ -34,7 +34,7 @@
     "source-map-explorer": "^2.5.0",
     "yarn": "^1.22.5"
   },
-  "homepage": "https://trlgml.github.io/antd-example",
+  "homepage": ".",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
