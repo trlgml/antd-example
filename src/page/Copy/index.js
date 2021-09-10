@@ -1,8 +1,8 @@
 import React from "react";
 import { List, Button } from "antd";
 import copy from "copy-to-clipboard";
-import list from "./copy"
-
+// import list from "./copy"
+const list = []
 const Copy = (props) => {
   const myCopy = (data) => {
     copy(data)
