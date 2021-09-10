@@ -25,7 +25,7 @@ jobs:
           ${{ runner.OS }}-build-
           ${{ runner.OS }}-
     - name: Install Packages
-      run: yarn install
+      run: yarn
     - name: Build page
       run: yarn run build
     - name: Deploy to gh-pages
