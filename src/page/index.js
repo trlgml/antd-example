@@ -15,6 +15,7 @@ const Home = () => {
     { name: 'Drag', path: '/drag' },
     { name: 'Editor', path: '/editor' },
     { name: 'D3', path: '/D3' },
+    { name: 'Northbound', path: '/Northbound' },
   ]
   return (
     <div className="home">

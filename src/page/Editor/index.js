@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./index.css";
 // 引入编辑器组件
 import BraftEditor from 'braft-editor'

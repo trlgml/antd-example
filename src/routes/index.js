@@ -18,6 +18,7 @@ const Im = lazy(() => import(/* webpackChunkName: "Im" */ "@/page/Im"));
 const Copy = lazy(() => import(/* webpackChunkName: "Im" */ "@/page/Copy"));
 const D3 = lazy(() => import(/* webpackChunkName: "D3" */ "@/page/D3"));
 const NoMatch = lazy(() => import(/* webpackChunkName: "404" */ "@/page/404"));
+const Northbound = lazy(() => import(/* webpackChunkName: "Northbound" */ "@/page/Northbound"));
 
 const routers = [
   { path: "/", component: Home },
@@ -32,6 +33,7 @@ const routers = [
   { path: "/Editor", component: Editor },
   { path: "/Copy", component: Copy },
   { path: "/Drag", component: Drag },
+  { path: "/Northbound", component: Northbound },
   { path: "/404", component: NoMatch },
 ]
 
