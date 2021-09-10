@@ -25,7 +25,6 @@ const Northbound = (props) => {
     dynamicLoad({ time })
   }, [dynamicLoad, time])
   useEffect(() => {
-    setData([])
     const dataSh = tabData[0] ? tabData[0].content : []
     const top10Sh = dataSh[1] ? dataSh[1].table : { tr: [] }
     const dataSz = tabData[2] ? tabData[2].content : []
@@ -71,6 +70,7 @@ const Northbound = (props) => {
     },
   ]
   function onChange(date) {
+    setData([])
     setTime(moment(date).format("YYYYMMDD"))
   }
 
