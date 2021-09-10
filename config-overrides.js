@@ -6,6 +6,10 @@ const custom = () => (config) => {
   // const oldExclude = loaders[2].exclude
   // const newExclude = [oldExclude, /sdk.js/]
   // loaders[2].exclude = newExclude
+  if (config.mode === 'production') {
+    const plugin_MiniCssExtractPlugin = config.plugins.find((p) => p.constructor.name === 'MiniCssExtractPlugin');
+    plugin_MiniCssExtractPlugin.options.ignoreOrder = true
+  }
   return config
 }
 
