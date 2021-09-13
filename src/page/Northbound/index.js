@@ -36,26 +36,26 @@ const Northbound = (props) => {
     return (strToNumber(a[0][3]) - strToNumber(a[0][4])) - (strToNumber(b[0][3]) - strToNumber(b[0][4]))
   }
   const columns = [
-    {
-      title: 'Code',
-      dataIndex: ['0', '1'],
-    },
+    // {
+    //   title: 'Code',
+    //   dataIndex: ['0', '1'],
+    // },
     {
       title: '名称',
       dataIndex: ['0', '2'],
     },
-    {
-      title: '买',
-      dataIndex: ['0', '3'],
-    },
-    {
-      title: '卖',
-      dataIndex: ['0', '4'],
-    },
-    {
-      title: '合计',
-      dataIndex: ['0', '5'],
-    },
+    // {
+    //   title: '买',
+    //   dataIndex: ['0', '3'],
+    // },
+    // {
+    //   title: '卖',
+    //   dataIndex: ['0', '4'],
+    // },
+    // {
+    //   title: '合计',
+    //   dataIndex: ['0', '5'],
+    // },
     {
       title: '差额',
       key: 'Diff',
