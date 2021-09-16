@@ -14,7 +14,6 @@ const Drag = lazy(() => import(/* webpackChunkName: "Drag" */ "@/page/Drag"));
 const Anim = lazy(() => import(/* webpackChunkName: "Anim" */ "@/page/Anim"));
 const Home = lazy(() => import(/* webpackChunkName: "Home" */ "@/page"));
 const Editor = lazy(() => import(/* webpackChunkName: "Editor" */ "@/page/Editor"));
-const Im = lazy(() => import(/* webpackChunkName: "Im" */ "@/page/Im"));
 const Copy = lazy(() => import(/* webpackChunkName: "Im" */ "@/page/Copy"));
 const D3 = lazy(() => import(/* webpackChunkName: "D3" */ "@/page/D3"));
 const NoMatch = lazy(() => import(/* webpackChunkName: "404" */ "@/page/404"));
@@ -29,7 +28,6 @@ const routers = [
   { path: "/D3", component: D3 },
   { path: "/Kebiao", component: Kebiao },
   { path: "/Anim", component: Anim },
-  { path: "/Im", component: Im },
   { path: "/Editor", component: Editor },
   { path: "/Copy", component: Copy },
   { path: "/Drag", component: Drag },

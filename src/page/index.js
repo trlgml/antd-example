@@ -5,26 +5,36 @@ import { Button } from "antd";
 const Home = () => {
   const list = [
     { name: 'Demo', path: '/demo' },
-    { name: '课表打印', path: '/kebiao' },
-    { name: 'Paletee', path: '/Paletee' },
-    { name: 'Selfvideo', path: '/Selfvideo' },
-    { name: 'Selfaudio', path: '/Selfaudio' },
+    { name: '日历课表', path: '/kebiao' },
+    { name: '画板', path: '/Paletee' },
+    { name: '视频播放器', path: '/Selfvideo' },
+    { name: '音频播放器', path: '/Selfaudio' },
     { name: 'Anim', path: '/Anim' },
-    { name: 'Im', path: '/Im' },
-    { name: 'Copy', path: '/Copy' },
-    { name: 'Drag', path: '/drag' },
-    { name: 'Editor', path: '/editor' },
-    { name: 'D3', path: '/D3' },
-    { name: 'Northbound', path: '/Northbound' },
+    { name: '拷贝', path: '/Copy' },
+    { name: '拖拽', path: '/drag' },
+    { name: '富文本编辑器', path: '/editor' },
+    { name: 'D3测试', path: '/D3' },
+    { name: '北向资金数据', path: '/Northbound' },
   ]
   return (
     <div className="home">
+      {/* <List
+        itemLayout="horizontal"
+        dataSource={list}
+        renderItem={item => (
+          <List.Item>
+            <List.Item.Meta
+              avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+              title={<a href="https://ant.design">{item.title}</a>}
+              description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+            />
+          </List.Item>
+        )}
+      /> */}
       {
         list.map((item) => {
           return (
-            <Link to={item.path} key={item.name}>
-              <Button type="link">{item.name}</Button>
-            </Link>
+            <Button type="link" ><Link to={item.path} key={item.name}>{item.name}</Link></Button>
           )
         })
       }
