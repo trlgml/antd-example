@@ -35,9 +35,11 @@ function JiNianBi() {
       render: item => {
         console.log();
         return (
-          <img
-            src={item.image}
-          />
+          <>
+            <img
+              src={item.image}
+            />
+          </>
         )
       },
     },
