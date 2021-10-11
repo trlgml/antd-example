@@ -36,9 +36,7 @@ function JiNianBi() {
         console.log();
         return (
           <>
-            <img
-              src={item.image}
-            />
+            <img alt='' src={item.image} />
           </>
         )
       },
