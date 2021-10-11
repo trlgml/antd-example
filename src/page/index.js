@@ -15,6 +15,7 @@ const Home = () => {
     { name: '富文本编辑器', path: '/editor' },
     { name: 'D3测试', path: '/D3' },
     { name: '北向资金数据', path: '/Northbound' },
+    { name: '纪念币', path: '/JiNianBi' },
   ]
   return (
     <div className="home">
