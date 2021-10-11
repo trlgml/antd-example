@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Image } from 'antd';
+import { Table } from 'antd';
 import jnb from './jnb.json';
 import './index.css';
 
