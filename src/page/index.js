@@ -16,6 +16,7 @@ const Home = () => {
     { name: 'D3测试', path: '/D3' },
     { name: '北向资金数据', path: '/Northbound' },
     { name: '纪念币', path: '/JiNianBi' },
+    { name: 'DataV', path: '/DataV' },
   ]
   return (
     <div className="home">

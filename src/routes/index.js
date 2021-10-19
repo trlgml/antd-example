@@ -19,6 +19,7 @@ const D3 = lazy(() => import(/* webpackChunkName: "D3" */ "@/page/D3"));
 const NoMatch = lazy(() => import(/* webpackChunkName: "404" */ "@/page/404"));
 const Northbound = lazy(() => import(/* webpackChunkName: "Northbound" */ "@/page/Northbound"));
 const JiNianBi = lazy(() => import(/* webpackChunkName: "JiNianBi" */ "@/page/JiNianBi"));
+const DataV = lazy(() => import(/* webpackChunkName: "DataV" */ "@/page/DataV"));
 
 const routers = [
   { path: "/", component: Home },
@@ -34,6 +35,7 @@ const routers = [
   { path: "/Drag", component: Drag },
   { path: "/Northbound", component: Northbound },
   { path: "/JiNianBi", component: JiNianBi },
+  { path: "/DataV", component: DataV },
   { path: "/404", component: NoMatch },
 ]
 
