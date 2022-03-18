@@ -3,7 +3,7 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import { Result, Button } from "antd";
 
-export default () => {
+const NotFound = () => {
   return (
     <div className=" h-100vh bg-light d-flex align-items-center">
       <div className="page404 m-auto">
@@ -21,3 +21,6 @@ export default () => {
     </div>
   );
 };
+
+export default NotFound
+
