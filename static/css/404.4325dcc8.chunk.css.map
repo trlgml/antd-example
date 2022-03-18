@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,2BACI,6BAA8B,CAC9B,cAAe,CACf,gBACJ,CAEA,2BACI,eACJ","file":"404.4325dcc8.chunk.css","sourcesContent":[".page404 .ant-result-title {\n    font-family: din_alternatebold;\n    font-size: 6rem;\n    line-height: 6rem;\n}\n\n.page404 .ant-result-extra {\n    margin-top: 10px;\n}"]}
