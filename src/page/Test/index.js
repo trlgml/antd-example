@@ -34,7 +34,7 @@ export const GlobalTeslaEngineStyle = createGlobalStyle`
 
 const isTeslaEngine = () => {
   const { userAgent } = window.navigator;
-  if (/MicroMessenger/i.test(userAgent) && /TESLA_/i.test(userAgent)) {
+  if (/MicroMessenger/i.test(userAgent) && /TESLA/i.test(userAgent)) {
     return true;
   }
   return false;
@@ -45,7 +45,7 @@ const Test = (props) => {
   
   return (
     <div className="Test">
-      你好，hello
+      你好1，hello
       <br/>
       {ua}
       <GlobalStyle />
