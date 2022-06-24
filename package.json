@@ -27,7 +27,8 @@
     "react-router-redux": "^4.0.8",
     "react-scripts": "3.4.0",
     "redux": "^4.0.4",
-    "redux-saga": "^1.1.1"
+    "redux-saga": "^1.1.1",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "add": "^2.0.6",
